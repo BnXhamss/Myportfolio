@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="assets/js/main.js " defer></script>
+</head>
+<body>
+
+  <header class="myheader">
+      <!-- ===MODAL BOX ====== -->
+
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+       <span class="close"><i class="fa fa-times"></i></span>
+       <div class="content-title">
+           <span>Skills</span>
+       </div>
+     
+          <div class="skills-box">
+           <span class="skills-label">HTML</span>
+           <span class="skills-label">CSS</span>
+           <span class="skills-label">JavaScript</span>
+            <span class="skills-label">React</span>
+            <span class="skills-label">Communication</span>
+            <span class="skills-label">Finance</span>
+            <span class="skills-label">Event planner</span>
+         </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal1">
+  <div class="modal-content">
+     <span class="close"><i class="fa fa-times"></i></span>
+     <div class="content-title">
+         <span>My Services</span>
+     </div>
+       <p>"Create responsive websites, e-commerce stores, and interactive web applications"</p>
+        <ul class="service_list">
+         <li>Web Development</li>
+         <li>Web Design</li>
+         <li>Web hosting</li>
+         <li>Software Development</li>
+       
+       </ul>
+   </div>
+  </div>
+
+<div class="modal" id="myModal2">
+  <div class="modal-content">
+     <span class="close"><i class="fa fa-times"></i></span>
+     <div class="content-title">
+         <span>About Me</span>
+     </div>
+          <p>"As a backend developer, I design, build, and maintain the server-side logic, databases, and APIs that power web applications, ensuring efficient data flow, security, and seamless integration with the frontend.  "</p>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- === END OF MODAL BOX ==== -->
+
+
+  <!-- ==== WRAPPER  ==== -->
+  <div class="wrapper">
+       <!-- ==== NAVIGATION BAR ===== -->
+         <nav class="nav">
+          <div class="nav_logo">
+          <span>Shameel  Haidara</span>
+          </div>
+
+        <div class="right_nav">
+          <div class="nav_menu" id="navMenu">
+              <ul class="link_list">
+                  <div class="close-menu">
+                      <i class="fa fa-times" onclick="menuClose()"></i>
+                  </div>
+                  <li class="list">
+                      <a href="#" class="link">Home</a>
+                  </li>
+                  <li class="list">
+                      <a href="#myModal" class="link" id="myBtn">Skills <i class="fa-solid fa-caret-down"></i></a>
+                      <div class="description_box">
+                          <div class="link_description" id="myDescription">
+                              <div class="content-title">
+                                  <span>I'm Skilled In</span>
+                              </div>
+                              <div class="desc_content">
+                                  <span class="skills-label">HTML</span>
+                                  <span class="skills-label">CSS</span>
+                                  <span class="skills-label">JavaScript</span>
+                                  <span class="skills-label">React</span>
+                                  <span class="skills-label">Communication</span>
+                                  <span class="skills-label">Finance</span>
+                                  <span class="skills-label">Event planner</span>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                   <li class="list">
+                      <a href="#myModal1" class="link" id="myBtn">Services <i class="fa-solid fa-caret-down"></i></a>
+                      <div class="description_box">
+                          <div class="link_description" id="myDescription">
+                              <div class="content-title">
+                                  <span>My Services </span>
+                              </div>
+                              <div class="desc_content">
+                                 <p>"Create responsive websites, e-commerce stores, and interactive web applications"</p>
+                                 <ul class="service_list">
+                                  <li>Web Development</li>
+                                  <li>Web Design</li>
+                                  <li>Web hosting</li>
+                                  <li>Software Development</li>
+                                  
+                                 </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                   <li class="list">
+                       <a href="#myModal2" class="link" id="myBtn">About<i class="fa-solid fa-caret-down"></i></a>
+                       <div class="description_box about_box">
+                          <div class="link_description" id="myDescription">
+                              <div class="content-title">
+                                  <span>About Me </span>
+                              </div>
+                              <div class="desc_content">
+                             <p>"As a backend developer, I design, build, and maintain the server-side logic, databases, and APIs that power web applications, ensuring efficient data flow, security, and seamless integration with the frontend."</p>
+                              </div>
+                          </div>
+                      </div>
+                   </li>
+
+              </ul>
+          </div>
+          <div class="nav_button">
+              <a href="assets/pdf/Shameel Abdallah_CV .pdf" class="btn"><i class="fa fa-download"></i> <span>Download Cv</span></a>
+          </div>
+         <div class="mode">
+          <div class="moon-sun" id="toggle-switch">
+              <i class="fa fa-moon" id="moon"></i>
+              <i class="fa fa-sun" id="sun"></i>
+          </div>
+         </div>
+         <div class="nav_menu_btn">
+          <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+         </div>
+        </div>
+      </nav>
+      <!-- ====MAIN ====-->
+       <main class="main">
+          <div class="row hero">
+              <div class="col col-1">
+               <div class="social_icons">
+                    <!-- ==== ICON  ANIMATION   CIRCLE==== -->
+                  <div class="icon_circle"></div>
+
+                  <!-- ==== SOCIAL ICONS  === -->
+                  <a href="http://linkedin.com/shameelhaidara" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                      <i class="fa-brands fa-linkedin-in icon"></i>
+                  </a>
+                  <a href="http://github.com/BnXhams" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                      <i class="fa-brands fa-github icon"></i>
+                  </a>
+                  <a href="http://gitlab.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                      <i class="fa-brands fa-gitlab icon"></i>
+                  </a>
+                  <a href="http://twitter.com/xhams_haidara" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                      <i class="fa-brands fa-twitter icon" style="text-decoration: none;"></i>
+                  </a>
+
+               </div>  
+                <!-- ===HERO TEXT  -->
+
+                <div class="hero_box">
+                  <div class="hello">
+                      <p>Hello, I am </p>
+                  </div>
+                  <div class="job">
+                      <span class="multiText"></span>
+                  </div>
+                  <div class="hero_description">
+                      <p>I am an experienced backend developer specializing in building secure, scalable, and efficient server-side applications, ensuring seamless data flow and system performance.</p>
+                  </div>
+                  <div class="hero_btn">
+                      <button class="btn_1">
+                        <a href="about.html" class="btn_11">Hire Me</a></button>
+                      <button class="btn_2"><a href="assets/pdf/Shameel Abdallah_CV .pdf">Download Cv</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-2">
+                  <div class="circle">
+                      <img src="assets/img/4.png" alt="">
+                  </div>
+                  <div class="hero-image">
+                      <img src="assets/img/1.png" alt="">
+                  </div>
+               <div class="clients">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="clients-content">
+                      <span>3 +</span>
+                      <p>Successful Project</p>
+                  </div>
+               </div>    
+              </div>
+              <div class="experience">
+                  <i class="fa-regular fa-star"></i>
+                  <div class="xp-content">
+                      <span>3 +</span>
+                      <p>Years of Experience</p>
+                  </div>
+               </div> 
+           </div> 
+       </main>
+  </div>
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  // Type Js
+  var typingEffect = new Typed(".multiText", {
+      strings: ["Designer","Coder","Developer","Admin.  Assistant",],
+      loop: true,
+      typespeed: 100,
+      backspeed: 80,
+      backDelay: 2000
+
+  })
+  // End of type Js
+</script>
+  </header>
+
+</body>
+</html>
