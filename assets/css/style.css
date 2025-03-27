@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .btn-primary {
+      @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
+  } */
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -171,7 +181,10 @@ display: flex;
     transition: 2s ease-in-out;
  }
  #sun{
-    opacity: 0;
+    opacity: 8;
+ }
+ #moon {
+    opacity: 2;
  }
 
   /* ====  MODAL BOX  ======*/
@@ -776,7 +789,7 @@ html, body {
  /* === Project Section */
  .project-explorer{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 350px;
  }
  
 .project-section{
@@ -916,4 +929,69 @@ h2 {
 
   
 
- 
+ /* ===== About Responsiveness ===== */
+
+/* General Styles */
+
+@media screen and (max-width: 1024px) {
+    .about-logo h1 {
+        font-size: 45px;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container, .project-section {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .info-box, .project-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-logo h1 {
+        font-size: 30px;
+    }
+    .info-box h3 {
+        font-size: 16px;
+    }
+    .project-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Project Section Enhancements */
+
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+    .project-container {
+        padding: 15px;
+    }
+    .project-container h2 {
+        font-size: 18px;
+    }
+    .project-container p {
+        font-size: 13px;
+    }
+}
+
